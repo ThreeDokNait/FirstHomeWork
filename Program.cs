@@ -85,18 +85,15 @@
         Console.WriteLine("Hi!");
         Console.WriteLine("Get number, please");
         int num1 = Convert.ToInt32(Console.ReadLine());
-        
-        while (num1>1);
+        int summ = 0;
+        do
         {
-            if (num1%2==1)
+            summ = summ + 2;
+            if (summ%2 == 0)
             {
-                Console.WriteLine(num1);
-                num1--;
+                Console.WriteLine(summ);
             }
-            else
-            {
-                num1--;
-            }
-        }
-        //Не смог добиться успеха
+        } while (summ<num1-1);
+
+        
         
